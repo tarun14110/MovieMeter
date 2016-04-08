@@ -1,0 +1,60 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_large"
+        android:id="@+id/frag_container"
+        tools:context="project.tarun.moviemeter.MainActivityFragment">
+
+        <TextView
+            android:id="@+id/movie_title"
+            style="@style/title_style" />
+
+        <ImageView
+            android:id="@+id/backdrop_image"
+            style="@style/backdrop_style"/>
+
+        <ImageView
+            android:id="@+id/poster_image"
+            style="@style/poster_style" />
+
+        <TextView
+            android:id="@+id/realease_date"
+            style="@style/realease_date_style" />
+
+        <LinearLayout
+            android:id="@+id/rating_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/realease_date"
+            android:layout_toRightOf="@id/poster_image"
+            android:layout_toEndOf="@id/poster_image"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:clipChildren="false">
+
+            <TextView
+                android:id="@+id/movie_rating"
+                style="@style/movie_rating_style"/>
+
+            <TextView
+                style="@style/SubRatingAppearance" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/MyTextAppearance" />
+
+    </RelativeLayout>
+
+</ScrollView>

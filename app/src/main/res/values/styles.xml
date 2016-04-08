@@ -1,0 +1,87 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="title_style" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/lightGray</item>
+        <item name="android:textSize">@dimen/text_largest</item>
+        <item name="android:background">@color/dark_gray</item>
+    </style>
+
+    <style name="backdrop_style" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/details_backdrop_height</item>
+        <item name="android:layout_below">@id/movie_title</item>
+    </style>
+
+    <style name="poster_style" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">@dimen/details_poster_width</item>
+        <item name="android:layout_height">@dimen/details_poster_height</item>
+        <item name="android:layout_marginTop">@dimen/details_poster_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginStart">@dimen/margin_large</item>
+    </style>
+
+    <style name="realease_date_style" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/backdrop_image</item>
+        <item name="android:layout_toRightOf">@id/poster_image</item>
+        <item name="android:layout_toEndOf">@id/poster_image</item>
+        <item name="android:layout_marginTop">@dimen/margin_low</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_default</item>
+        <item name="android:layout_marginStart">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+    </style>
+
+    <style name="movie_rating_style" parent="TextAppearance.AppCompat.Display2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="SubRatingAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_default</item>
+        <item name="android:text">@string/rating_denominator</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+
+    <style name="MyTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/rating_container</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+        <item name="android:layout_marginStart">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_large</item>
+        <item name="android:lineSpacingMultiplier">@dimen/body_text_line_spacing</item>
+        <item name="android:textColor">@color/dark_red</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+</resources>
